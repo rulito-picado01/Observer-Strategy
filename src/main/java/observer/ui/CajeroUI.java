@@ -1,4 +1,4 @@
-package ui;
+package observer.ui;
 
 import observer.model.CuentaBancaria;
 
