@@ -7,7 +7,7 @@ enum TipoLlamada {
 
 class Llamada {
     public TipoLlamada tipo;
-    public double duracion; // en minutos
+    public double duracion;
 
     public Llamada(TipoLlamada tipo, double duracion) {
         this.tipo = tipo;
@@ -19,19 +19,19 @@ class Llamada {
         boolean promocion = false;
 
         if (tipo == TipoLlamada.NACIONAL) {
-            costo = 0.05 * duracion; // $0.05 por minuto
+            costo = 1.1 * duracion;
             if (duracion > 30) {
-                promocion = true; // Si la llamada supera los 30 minutos, se aplica una promoción
+                promocion = true;
             }
         } else if (tipo == TipoLlamada.INTERNACIONAL) {
-            costo = 0.1 * duracion; // $0.10 por minuto
+            costo = 1.5 * duracion;
             if (duracion > 20) {
-                promocion = true; // Si la llamada supera los 20 minutos, se aplica una promoción
+                promocion = true;
             }
         }
 
         if (promocion) {
-            costo *= 0.9; // Se aplica un descuento del 10% si se cumple la promoción
+            costo = costo - (costo * 0.05);
         }
         return costo;
     }
