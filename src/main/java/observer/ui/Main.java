@@ -14,6 +14,6 @@ public class Main {
     }
 
     private void start() {
-        new CajeroUI(new SwingMonitorDeCuenta()).iniciar();
+        new CajeroUI(new MonitorDeCuenta()).iniciar();
     }
 }

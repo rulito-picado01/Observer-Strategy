@@ -4,10 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class SwingMonitorDeCuenta {
+public class MonitorDeCuenta {
     private JLabel label;
 
-    public SwingMonitorDeCuenta() {
+    public MonitorDeCuenta() {
         JFrame frame = new JFrame("Monitor");
         frame.getRootPane().setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
         label = new JLabel("...");

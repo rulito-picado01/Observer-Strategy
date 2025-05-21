@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 
 public class CajeroUI {
 
-    private SwingMonitorDeCuenta monitor;
+    private MonitorDeCuenta monitor;
 
-    CajeroUI(SwingMonitorDeCuenta monitor) {
+    CajeroUI(MonitorDeCuenta monitor) {
         this.monitor = monitor;
     }
 
